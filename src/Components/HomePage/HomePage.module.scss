@@ -1,0 +1,40 @@
+.main{
+    background-color: rgb(255, 255, 255);
+    color: rgb(11, 11, 11);
+    width: 50rem;
+    height: 20rem;
+    border-radius: 5rem;
+}
+
+h1{
+    font-size: 4rem;
+    font-family: var(--font-title);
+    padding: 2rem;
+
+}
+
+input{
+    height: 2.5rem;
+    width: 16rem;
+    font-family: var(--font-text);
+    border-radius: 1rem 0 0 1rem;
+    border-color: var(--background);
+    padding-left: 1rem;
+}
+
+input:focus{
+    border-color: var(--button-hover);
+}
+
+.button{
+    border: none;
+    padding: .75rem;
+    border-radius: 0 1rem 1rem 0;
+    background-color: var(--background);
+    color: var(--button-text)
+}
+
+.button:hover{
+    background-color: var(--button-hover);
+    cursor: pointer;
+}

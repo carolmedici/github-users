@@ -19,7 +19,7 @@ const HomePage = () => {
       <main className={style.main}>
           <h1>DevHunt</h1>
           <input type="text" placeholder="Enter a GitHub username" value={username} onChange={handleInputChange} />
-          <button onClick={handleSearch}>Search</button>
+          <button className={style.button} onClick={handleSearch}>Search</button>
       </main>
     </>
   );
