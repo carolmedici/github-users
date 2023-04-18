@@ -24,11 +24,11 @@ const HomePage = () => {
       </main>
       {userData && (
         <section className={style.card}>
-          <img src={userData.avatar_url} alt="User avatar" />
-          <h2>{userData.name}</h2>
-          <p>{userData.login}</p>
-          <a href={userData.html_url}>GitHub Profile</a>
-          <p>Followers: {userData.followers}</p>
+          <img className={style.card__profileImage} src={userData.avatar_url} alt="User avatar" />
+          <h2 className={style.card__name}> {userData.name}</h2> 
+     
+          <p className={style.card__profileName}>User: <a className={style.card__link} href={userData.html_url} target="blank">{userData.login}</a></p>
+          <p className={style.card__followers}>Followers: {userData.followers}</p>
         </section>
       )}
     </>
